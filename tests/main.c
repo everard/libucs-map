@@ -180,7 +180,7 @@ main() {
 
     int result = EXIT_SUCCESS;
     unsigned map_size_expected = 0;
-    map_key keys[2048] = {};
+    map_key keys[key_array_size] = {};
 
     // Insert elements to the map.
     printf("inserting elements:\n");
@@ -231,7 +231,7 @@ main() {
     printf("\n\n");
 
     // Insert new elements to the map.
-    printf("inserting half of the map elements again:\n");
+    printf("inserting half of the map's elements again:\n");
     if(true) {
         map_key* k = &keys[(ptrdiff_t)(map_size_expected / 2)];
         for(unsigned i = 0; i < (map_size_expected / 2); ++i, ++k) {
@@ -296,7 +296,7 @@ main() {
         }
     }
 
-    printf("\n\nsuccess\n");
+    printf("\nsuccess\n");
 
 cleanup:
 
