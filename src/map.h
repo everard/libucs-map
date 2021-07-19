@@ -18,7 +18,7 @@
 struct ucs_map;
 typedef struct ucs_map* ucs_map;
 
-typedef void* ucs_map_key;
+typedef void const* ucs_map_key;
 typedef void* ucs_map_iterator;
 
 ////////////////////////////////////////////////////////////////////////////////
